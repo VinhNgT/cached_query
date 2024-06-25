@@ -1,6 +1,8 @@
 name: cached_query
 repository: https://github.com/D-James-GH/cached_query
 
+sdkPath: .fvm/flutter_sdk
+
 packages:
   - packages/**
   - examples/**
