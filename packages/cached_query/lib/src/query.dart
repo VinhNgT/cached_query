@@ -165,7 +165,7 @@ class Query<T> extends QueryBase<T, QueryState<T>> {
         trace,
       );
       if (config.shouldRethrow) {
-        rethrow;
+        await Future<Object>.error(e, trace);
       }
     } finally {
       _currentFuture = null;
